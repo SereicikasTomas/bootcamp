@@ -1,0 +1,205 @@
+/* Less is more*/
+
+/* Importuojami kiti css failai */
+@import "fonts.less";
+@import "reset.less";
+
+
+/* Stiliaus parametrai */
+
+* {
+  border: 0.1px solid red;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", Arial;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Header dalis */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 9vh;
+  margin: 5px auto;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+header.clone {
+    background-image: url(../images/galaxy.jpg);
+    position: fixed;
+    margin-top: 0px;
+    width: 100%;
+    padding: 5px 10% 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-110%);
+    transition: 0.2s transform cubic-bezier(.3,.73,.3,.74);
+}
+
+body.down header.clone {
+    transform: translateY(0);
+}
+
+.logoname {
+  display: flex;
+  align-items: center;
+
+  .logo {
+    height: 100%;
+    width: 60px;
+  }
+
+  .name {
+    font-size: 2em;
+    display: inline-block;
+    margin: 0 0 0 15px;
+    font-style: italic;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+
+  .navigation {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+
+    li:nth-child(1n+2) {
+        margin-left: 20px;
+      }
+
+    a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 1.5em;
+      font-weight: 300;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(255, 255, 255);
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+
+        &:before {
+          visibility: visible;
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}
+
+h1 {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 60px;
+  text-align: center;
+}
+
+blockquote {
+  font-size: 0.9em;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(77, 50, 77, .5);
+  border: 5px double rgba(255, 255, 255, .5);
+  border-radius: 5px;
+}
+
+#banner {
+  background-image: url(../images/galaxy.jpg);
+  min-height: 768px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* About dalis */
+
+.aboutbox {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+
+  .about_container {
+    display: inline-block;
+
+    p,
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .manonuotrauka {
+    min-height: 300px;
+    min-width: 230px;
+    height: 100%;
+    width: 20%;
+  }
+}
+
+.mainfooter {
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+/* Maži logo */
+
+.facebook:before{
+  content:"\ea91";
+  font-family: 'icomoon';
+}
+
+.linkedin:before{
+  content:"\eac9";
+  font-family: 'icomoon';
+}
+
+.instagram:before{
+  content:"\ea92";
+  font-family: 'icomoon';
+}
+
+.github:before{
+  content:"\eab0";
+  font-family: 'icomoon';
+}
+
+/* Media Queries */
+
+@media all and (min-width: 320px) and (max-width: 480px) {
+}
+@media all and (min-width: 481px) and (max-width: 767px) {
+}
+@media all and (min-width: 768px) and (max-width: 1280px) {
+}
+@media all and (min-width: 1281px) {
+}
