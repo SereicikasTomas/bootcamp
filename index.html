@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>That Simple</title>
+  <meta name="description" content="Tomo Sereičiko puslapis">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/fancybox.css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+  <div id="banner" style="background-image: url(images/galaxy.jpg);">
+    <header>
+      <div class="logoname">
+        <a href="index.html"><img class="logo" src="images/whitelogo.png" alt="logotipas"></a>
+      </div>
+      <nav>
+        <div class="burger"></div>
+        <ul class="navigation">
+          <li><a href="#">Pagrindinis</a></li>
+          <li><a href="#about">Apie</a></li>
+          <li><a href="#works">Darbai</a></li>
+          <li><a href="#contacts">Kontaktai</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Atitinkamai nuo laiko raso laba diena, vakaras, rytas -->
+
+    <h1 id="pasisveikinimas">Sveiki atvykę!</h1>
+
+    <blockquote class="citata">
+      Talentas neegzistuoja. Egzistuoja tik sunkus darbas. Sunkus darbas — tai apsėsto žmogaus bruožas. Mes esame žmogiškos būtybės ir mes visi esame lygūs. Jei skirsite pakankamai pastangų — jūs galėsite tapti bet kuo. Jūs pasieksite sėkmės viršūnę. Aš nesu talentingas, bet aš esu apsėstas.
+      <footer>
+        - <cite>Conor Mcgregor</cite>
+      </footer>
+    </blockquote>
+  </div>
+
+  <main>
+
+    <section id="about" class="aboutbox" itemscope itemtype="http://schema.org/Person">
+      <h4>Kas aš esu</h4>
+      <h2>Informacija apie mane</h2>
+      <div class="about_container">
+        <img class="manonuotrauka" src="images/advertising-1247947_960_720.jpg" alt="Tomo Sereičiko nuotrauka" itemprop="image">
+        <p>Mano vardas <span itemprop="givenName">Tomas</span> <span itemprop="familyName">Sereičikas</span>. Šiuo metu aš mokausi programuoti, kad tapčiau <span itemprop="jobTitle">junior developer</span>'iu ir šis puslapis yra mano pirmasis projektas. Man patinka tai ką aš darau ir nekėtinu sustoti, tad laukit daugiau darbų greitu metu!</p>
+      </div>
+    </section>
+
+    <section id="works" class="workbox">
+      <h4>Ką aš veikiu</h4>
+      <h2>Mano projektai</h2>
+      <p>Tu žiūri į jį. Kolkas šis pulsapis yra mano vienintelis projektas. Apačioje, nuotraukos iš mano kelionių.</p>
+      <div class="work_container">
+        <a href="#">
+          <img class="fancybox" src="images/swissmountain.jpg" alt="Šveicarijos kalnai.">
+        </a>
+        <a href="#">
+          <img class="fancybox" src="images/swissforest.jpg" alt="Šveicarijos miškas.">
+        </a>
+        <a href="#">
+          <img class="fancybox" src="images/croatiayoga.jpg" alt="Yoga.">
+        </a>
+        <a href="#">
+          <img class="fancybox" src="images/dubrovnik.jpg" alt="Dubrovniko tvirtovė.">
+        </a>
+        <a href="#">
+          <img class="fancybox" src="images/africachildren.jpg" alt="Aš su afrikos vaikais.">
+        </a>
+        <a href="#">
+          <img class="fancybox" src="images/grace.jpg" alt="Katė Grace.">
+        </a>
+        <a href="#">
+          <img class="fancybox" src="images/louvre.jpg" alt="Luvro muziejus.">
+        </a>
+        <a href="#">
+          <img class="fancybox" src="images/arc.jpg" alt="Triumfo arka.">
+        </a>
+      </div>
+    </section>
+
+    <section id="contacts" class="contactbox">
+      <h4>Kaip mane rasti</h4>
+      <h2>Susisiekit su manim</h2>
+      <div id="map"></div>
+      <div class="contact_container">
+        <div class="email">
+          <h4>Elektroninis paštas</h4>
+          <p><a href="mailto:sereicikas.t@gmail.com">sereicikas.t@gmail.com</a></p>
+        </div>
+        <div class="phone">
+          <h4>Mobilus telefonas</h4>
+          <p><a href="tel:+37068695429">+37068695429</a></p>
+        </div>
+        <div class="social">
+          <h4>Socialiniai tinklai</h4>
+          <ul class="socialmedia">
+            <a href="https://www.facebook.com/tomas.sereicikas" target="_blank"><li class="facebook"></li></a>
+            <a href="https://www.linkedin.com/in/tomas-serei%C4%8Dikas-03a0ba93/" target="_blank"><li class="linkedin"></li></a>
+            <a href="https://www.instagram.com/sereicikast/?hl=en" target="_blank"><li class="instagram"></li></a>
+            <a href="https://github.com/SereicikasTomas" target="_blank"><li class="github"></li></a>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="mainfooter">
+    <p>&copy; That simple, by T.S. All Rights Reserved. 2017.</p>
+  </footer>
+  <!-- Sticky header -->
+  <script src="scripts/jquery.min.js" type="text/javascript"></script>
+  <script src="scripts/stickyheader.min.js" type="text/javascript"></script>
+  <script src="scripts/burger.js" type="text/javascript"></script>
+  <!-- Atitinkamai nuo laiko raso laba diena, vakaras, rytas -->
+  <script src="scripts/pasisveikinimas.min.js" type="text/javascript"></script>
+  <!-- Google maps -->
+  <script src="scripts/mapjquery.min.js" type="text/javascript"></script>
+  <script src="scripts/map.min.js" type="text/javascript"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgcbNuyDeXimnwhWjhfVyWIS6E_twyeTY&callback=initMap"></script>
+  <!-- Issoka nuotraukos -->
+  <script type="text/javascript" src="scripts/jquerymigrate.min.js"></script>
+  <script type="text/javascript" src="scripts/jqueryfancybox.min.js"></script>
+  <script type="text/javascript" src="scripts/forpic.min.js"></script>
+
+</body>
+</html>
